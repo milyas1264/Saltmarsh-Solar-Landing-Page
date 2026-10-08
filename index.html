@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Landing page for "Saltmarsh Solar" (fictional company) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saltmarsh Solar | Rooftop solar, installed properly</title>
+  <meta name="description" content="Saltmarsh Solar designs and installs rooftop solar for homes and small businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Apply saved theme BEFORE first paint to avoid a light/dark flash -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo"><span class="logo-mark" aria-hidden="true"></span>Saltmarsh</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Light / dark theme toggle -->
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch to dark theme" type="button">
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <!-- Hamburger (mobile only) -->
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <h1>Your roof already gets the sun. Let it pay you back.</h1>
+        <p class="hero-sub">Saltmarsh designs, installs and maintains rooftop solar for homes and small businesses. One crew, one quote, one 25-year warranty.</p>
+        <a href="#contact" class="btn">Get a free roof assessment</a>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <h2>Built by installers, not salespeople.</h2>
+        <div>
+          <p>We started in 2014 with two electricians and a borrowed ladder. Today we have installed over 3,200 systems, and every one is still wired by our own employees. No subcontractors, no surprises on install day.</p>
+          <p>We size each system to your real bills, not to the biggest panel count we can sell.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES (feature cards) ========== -->
+    <section class="section alt" id="services">
+      <div class="container">
+        <h2 class="reveal">What we do</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+            <h3>Home solar</h3>
+            <p>Roof surveys, panel layout, permits and installation, usually finished in two days.</p>
+          </article>
+          <article class="card reveal">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M7 10v4M11 10v4"/></svg>
+            <h3>Battery storage</h3>
+            <p>Keep the lights on through outages and use your own daytime power after sunset.</p>
+          </article>
+          <article class="card reveal">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/></svg>
+            <h3>Care plans</h3>
+            <p>Yearly cleaning, inverter checks and live monitoring, with a call-out within 48 hours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <h2 class="reveal">Customers, in their words</h2>
+        <div class="quotes">
+          <blockquote class="reveal">
+            <p>Our bill dropped from $210 to $18 the first month. The crew was gone by 3 pm both days.</p>
+            <footer>Amira Khan, homeowner</footer>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>They told us we needed fewer panels than another company quoted. That's why we signed.</p>
+            <footer>Daniel Ortiz, owner of Ortiz Bakery</footer>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>A storm took out power for three days. Our fridge and Wi-Fi never blinked.</p>
+            <footer>Priya Nair, homeowner</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER / CONTACT ========== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h2>Talk to an installer</h2>
+        <p>We reply within one working day.</p>
+      </div>
+      <address>
+        <p><a href="mailto:hello@saltmarsh.example">hello@saltmarsh.example</a></p>
+        <p><a href="tel:+15550142020">+1 (555) 014-2020</a></p>
+        <p>42 Harbor Road, Port Alder</p>
+      </address>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://twitter.com" target="_blank" rel="noopener">X / Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <p class="copy container">© 2026 Saltmarsh Solar. A fictional company for a practice project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
